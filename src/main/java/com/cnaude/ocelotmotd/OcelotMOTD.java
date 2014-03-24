@@ -23,12 +23,12 @@ import org.bukkit.plugin.RegisteredServiceProvider;
  */
 public class OcelotMOTD extends JavaPlugin implements Listener {
 
-    public static String LOG_HEADER;
     static final Logger log = Logger.getLogger("Minecraft");
+    private static String LOG_HEADER;
     private boolean debugEnabled;
-    Scheduler scheduler;
+    private Scheduler scheduler;
     private final HashMap<String, String> joinMessages = new HashMap<>();
-    public static Permission perms = null;
+    private static Permission perms = null;
     private final ArrayList<String> tasks = new ArrayList<>();
     private final String CRONTABS = "crontabs";
     private final String ENABLED = "enabled";
