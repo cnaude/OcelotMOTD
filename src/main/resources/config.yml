@@ -1,8 +1,10 @@
-# On join MOTD messages per group name
+# Sample configuration. 
+# To reload configuration use /omreload.
 # Valid auto replacing tokens for messages
 #   %NAME%
 #   %DISPLAYNAME%
 #   %WORLD%
+# On join MOTD messages per group name
 on-join-motd:
     default: '&3Hi &6%NAME%&3. Welcome to the server! Please read the &6rules&3.'
 # The various crontabs are grouped by group name
