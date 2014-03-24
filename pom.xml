@@ -26,6 +26,11 @@
             <id>vault-repo</id>
             <url>http://ci.herocraftonline.com/plugin/repository/everything</url>
         </repository> -->
+        <!-- For anything else without its own repo -->
+        <repository>
+            <id>cnaude-repo</id>
+            <url>http://cnaude.freeshell.org/repo/</url>
+        </repository>
     </repositories>
 
     <dependencies>
