@@ -1,0 +1,22 @@
+# On join MOTD messages per group name
+# Valid auto replacing tokens for messages
+#   %NAME%
+#   %DISPLAYNAME%
+#   %WORLD%
+on-join-motd:
+    default: '&3Hi &6%NAME%&3. Welcome to the server! Please read the &6rules&3.'
+# The various crontabs are grouped by group name
+# group-crontabs:
+#    GROUPNAME:
+#        UNIQUE_MESSAGE_NAME:
+#            chronos: CRONTAB STYLE TIME DEFINITION
+#            message: ACTUAL MESSAGE (SUPPORTS COLOR CODES VIA AMPERSANDS)
+#            command: OPTIONAL GAME COMMAND
+#            enabled: true/false
+crontabs:
+    default:
+        Example:            
+            chronos: '* * * * *'
+            message: 'This message will be sent every minute to each player in the default group!'
+            command: ''
+            enabled: false

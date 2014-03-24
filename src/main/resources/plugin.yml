@@ -1,0 +1,12 @@
+name: ${project.name}
+version: ${project.version}
+description: ${project.description}
+author: cnaude
+main: com.cnaude.ocelotmotd.OcelotMOTD
+commands:
+    omreload:
+        description: Reload the configuration
+permissions:
+  'ocelotmotd.reload':
+    description: Permission to run /omreload.
+    default: op
