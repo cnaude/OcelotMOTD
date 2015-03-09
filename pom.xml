@@ -12,8 +12,9 @@
     
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <maven.compiler.source>1.7</maven.compiler.source>
-        <maven.compiler.target>1.7</maven.compiler.target>
+        <!-- Bukkit API Version, change if out dated -->
+        <bukkit.version>1.8.3</bukkit.version>
+        <build.number>SNAPSHOT</build.number>
     </properties>
 
     <repositories>
@@ -21,11 +22,6 @@
             <id>bukkit-repo</id>
             <url>http://repo.bukkit.org/content/groups/public</url>
         </repository>
-        <!-- Vault 
-        <repository>
-            <id>vault-repo</id>
-            <url>http://ci.herocraftonline.com/plugin/repository/everything</url>
-        </repository> -->
         <!-- For anything else without its own repo -->
         <repository>
             <id>cnaude-repo</id>
@@ -36,24 +32,23 @@
     <dependencies>
         <dependency>
             <groupId>org.bukkit</groupId>
-            <artifactId>bukkit</artifactId>
-            <version>1.7.2-R0.3</version>
+            <artifactId>spigot</artifactId>
+            <version>${bukkit.version}</version>
             <type>jar</type>
             <scope>provided</scope>
         </dependency>
         
         <dependency>
-            <groupId>it.sauronsoftware.cron4j</groupId>
+            <groupId>com.cnaude.cron4j</groupId>
             <artifactId>cron4j</artifactId>
             <version>2.2.5</version>
         </dependency>
         
-        <!-- Use Vault Economy API interface -->
+        <!-- Vault -->
         <dependency>
             <groupId>net.milkbowl.vault</groupId>
             <artifactId>Vault</artifactId>
-            <version>1.2.25</version>
-            <scope>provided</scope>
+            <version>1.5.2</version>
         </dependency>
     </dependencies>
 
